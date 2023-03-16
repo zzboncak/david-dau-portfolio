@@ -7,15 +7,9 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: var(--primary-color);
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +20,21 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.credentials-list {
+  display: grid;
+  list-style: none;
+  text-align: left;
+  grid-template-columns: auto auto;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
 }
 
 @keyframes App-logo-spin {
