@@ -1,3 +1,14 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGraduationCap,
+  faSchoolCircleCheck,
+  faCertificate,
+  faSquareRootVariable,
+  faQuestion,
+  faChartLine,
+  faSquareFull,
+  faPercent
+} from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
 function App() {
@@ -10,9 +21,17 @@ function App() {
       <main>
         <h2>Credentials</h2>
         <ul className="credentials-list">
-          <li>Currently in my 10th year of teaching high school Math</li>
-          <li>Certified to teach grades 6-12</li>
           <li>
+            <FontAwesomeIcon icon={faSchoolCircleCheck} />
+            Currently in my 10th year of teaching high school Math
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faCertificate} />
+            Certified to teach grades 6-12
+          </li>
+          {/** Maybe consoloidate these */}
+          <li>
+            <FontAwesomeIcon icon={faGraduationCap} />
             Degree from Marquette University in Secondary Education and
             Mathematics
           </li>
@@ -31,14 +50,30 @@ function App() {
         </ul>
         <h2>I can help with...</h2>
         <ul className="credentials-list">
-          <li>6th-8th grade math</li>
-          <li>Algebra I</li>
-          <li>Algebra II/Trig</li>
-          <li>Geometry</li>
-          <li>Trigonometry</li>
-          <li>Precalculus</li>
-          <li>Integrated Math 1, 2, 3</li>
-          <li>If unsure, feel free to just ask!</li>
+          {/** Maybe wrap the icons or symbols in a span to style them and make them stand out */}
+          <li>
+            <FontAwesomeIcon icon={faSquareRootVariable} />
+            6th-8th grade math
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faPercent} />
+            Algebra I
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faChartLine} />
+            Algebra II/Trig
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faSquareFull} />
+            Geometry
+          </li>
+          <li>&theta; Trigonometry</li>
+          <li>∫ Precalculus</li>
+          <li>2(x + 3) Integrated Math 1, 2, 3</li>
+          <li>
+            <FontAwesomeIcon icon={faQuestion} />
+            If unsure, feel free to just ask!
+          </li>
         </ul>
         <h2>Testimonials</h2>
         <article>
