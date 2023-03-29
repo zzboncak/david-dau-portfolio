@@ -1,10 +1,15 @@
-.App {
-  text-align: center;
+main {
+  margin-bottom: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 50px 0;
+}
+
+p {
+  font-size: 16px;
 }
 
 .App-header {
@@ -14,8 +19,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-header > p {
+  font-size: calc(10px + 2vmin);
 }
 
 .App-link {
@@ -37,11 +45,28 @@ blockquote p::after {
   content: '\201D';
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.credentials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.credential {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.credential .svg-inline--fa {
+  background-color: var(--primary-color);
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.secondary-background {
+  background-color: var(--secondary-color);
 }
