@@ -47,14 +47,34 @@ blockquote p::after {
 
 .credentials-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
+  width: calc(100vw - 600px);
+  margin: 0 auto;
+}
+
+.credential:nth-child(odd) {
+  padding-left: 2rem;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.credential:nth-child(odd) p {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.credential:nth-child(even) {
+  padding-right: 2rem;
+}
+
+.credential:nth-child(even) p {
+  padding-left: 1rem;
 }
 
 .credential {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
