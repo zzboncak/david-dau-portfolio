@@ -38,11 +38,11 @@ p {
 }
 
 blockquote p::before {
-  content: '\201C';
+  content: "\201C";
 }
 
 blockquote p::after {
-  content: '\201D';
+  content: "\201D";
 }
 
 .credentials-grid {
@@ -89,4 +89,35 @@ blockquote p::after {
 
 .secondary-background {
   background-color: var(--secondary-color);
+}
+
+/* Utilities */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.full-height {
+  height: 100vh;
 }

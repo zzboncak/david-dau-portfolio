@@ -7,7 +7,7 @@ import {
   faQuestion,
   faChartLine,
   faSquareFull,
-  faPercent
+  faPercent,
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
@@ -66,32 +66,125 @@ function App() {
         </section>
         <section className="secondary-background">
           <h2>I can help with...</h2>
-          <ul className="credentials-list">
-            {/** Maybe wrap the icons or symbols in a span to style them and make them stand out */}
-            <li>
+          <section
+            className="help-container relative"
+            style={{ height: "900vh" }}
+          >
+            <article
+              className="absolute"
+              style={{
+                height: "100vh",
+              }}
+            >
+              <div className="flex align-baseline full-height">
+                <div className="sticky">
+                  <FontAwesomeIcon icon={faSquareRootVariable} />
+                </div>
+                <p>6th-8th grade math</p>
+              </div>
+            </article>
+            <article
+              className="absolute"
+              style={{
+                height: "100vh",
+                paddingTop: "100vh",
+              }}
+            >
+              <div className="flex align-baseline full-height">
+                <div className="sticky">
+                  <FontAwesomeIcon icon={faPercent} />
+                </div>
+                <p>Algebra I</p>
+              </div>
+            </article>
+          </section>
+          {/* <ul className="credentials-list" style={{ height: "900vh" }}>
+            <li
+              className="math-skill"
+              style={{
+                height: "100vh",
+                position: "absolute",
+                paddingTop: "100vh",
+              }}
+            >
               <FontAwesomeIcon icon={faSquareRootVariable} />
               6th-8th grade math
             </li>
-            <li>
+            <li
+              className="math-skill"
+              style={{
+                height: "100vh",
+                position: "absolute",
+                paddingTop: "200vh",
+              }}
+            >
               <FontAwesomeIcon icon={faPercent} />
               Algebra I
             </li>
-            <li>
+            <li
+              className="math-skill"
+              style={{
+                height: "100vh",
+                position: "absolute",
+                paddingTop: "300vh",
+              }}
+            >
               <FontAwesomeIcon icon={faChartLine} />
               Algebra II/Trig
             </li>
-            <li>
+            <li
+              className="math-skill"
+              style={{
+                height: "100vh",
+                position: "absolute",
+                paddingTop: "400vh",
+              }}
+            >
               <FontAwesomeIcon icon={faSquareFull} />
               Geometry
             </li>
-            <li>&theta; Trigonometry</li>
-            <li>∫ Precalculus</li>
-            <li>2(x + 3) Integrated Math 1, 2, 3</li>
-            <li>
+            <li
+              className="math-skill"
+              style={{
+                height: "100vh",
+                position: "absolute",
+                paddingTop: "500vh",
+              }}
+            >
+              &theta; Trigonometry
+            </li>
+            <li
+              className="math-skill"
+              style={{
+                height: "100vh",
+                position: "absolute",
+                paddingTop: "600vh",
+              }}
+            >
+              ∫ Precalculus
+            </li>
+            <li
+              className="math-skill"
+              style={{
+                height: "100vh",
+                position: "absolute",
+                paddingTop: "700vh",
+              }}
+            >
+              2(x + 3) Integrated Math 1, 2, 3
+            </li>
+            <li
+              className="math-skill"
+              style={{
+                height: "100vh",
+                position: "absolute",
+                paddingTop: "800vh",
+              }}
+            >
               <FontAwesomeIcon icon={faQuestion} />
               If unsure, feel free to just ask!
             </li>
-          </ul>
+          </ul> */}
         </section>
         <section>
           <h2>Testimonials</h2>
