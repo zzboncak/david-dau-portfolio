@@ -2,6 +2,10 @@ main {
   margin-bottom: 50px;
 }
 
+main > section {
+  padding: 32px;
+}
+
 h2 {
   text-align: center;
   font-size: 30px;
