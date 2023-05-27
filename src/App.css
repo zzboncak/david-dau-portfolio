@@ -91,6 +91,19 @@ blockquote p::after {
   background-color: var(--secondary-color);
 }
 
+.help-item {
+  padding-left: 5rem;
+}
+
+.help-icon {
+  height: 30px;
+}
+
+.help-subject {
+  font-size: 32px;
+  padding-left: 1rem;
+}
+
 /* Utilities */
 
 .relative {
@@ -107,7 +120,7 @@ blockquote p::after {
 
 .sticky {
   position: sticky;
-  top: 0;
+  top: 50vh;
 }
 
 .align-center {
@@ -119,5 +132,5 @@ blockquote p::after {
 }
 
 .full-height {
-  height: 100vh;
+  height: 50vh;
 }
