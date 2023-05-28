@@ -124,7 +124,7 @@ blockquote p::after {
 
 .sticky {
   position: sticky;
-  top: 50vh;
+  top: 10vh;
 }
 
 .align-center {
