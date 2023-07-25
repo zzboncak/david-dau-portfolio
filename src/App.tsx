@@ -23,16 +23,38 @@ interface StickyScrollHelpProps {
   icon: IconDefinition;
   text: string;
   paddingTop: string;
+  sticky?: boolean;
 }
 
-function StickyScrollHelp({ icon, text, paddingTop }: StickyScrollHelpProps) {
+interface TestimonialProps {
+  citation: string;
+  children: React.ReactNode;
+}
+
+function Testimonial({ citation, children }: TestimonialProps) {
+  return (
+    <article>
+      <blockquote>
+        <p>{children}</p>
+      </blockquote>
+      <cite>{citation}</cite>
+    </article>
+  );
+}
+
+function StickyScrollHelp({
+  icon,
+  text,
+  paddingTop,
+  sticky,
+}: StickyScrollHelpProps) {
   return (
     <article
       className="absolute help-item"
       style={{ height: "50vh", paddingTop }}
     >
       <div className="flex align-baseline full-height">
-        <div className="sticky">
+        <div className={sticky ? "sticky" : undefined}>
           <FontAwesomeIcon className="help-icon" icon={icon} />
         </div>
         <p className="help-subject">{text}</p>
@@ -139,53 +161,38 @@ function App() {
                 icon={item.icon}
                 text={item.text}
                 paddingTop={`${index * 50}vh`}
+                sticky={index !== helpItems.length - 1}
               />
             ))}
           </section>
         </section>
         <section>
           <h2>Testimonials</h2>
-          <article>
-            <blockquote>
-              <p>
-                David saved the day for our daughter who was struggling in
-                Precalculus. We reached out to him and his response was
-                immediate and we set up a time that week. Loved his offer to
-                meet in our home. Our daughter's grade was a C but she was able
-                to get it up to an A in the next semester. I would give credit
-                to David for instilling her confidence in math and helping her
-                with greater understanding
-              </p>
-            </blockquote>
-            <cite>Parent of student in Precalculus</cite>
-          </article>
-          <article>
-            <blockquote>
-              <p>Mr. Dau explained concepts so that I could understand it.</p>
-            </blockquote>
-            <cite>Precalculus student</cite>
-          </article>
-          <article>
-            <blockquote>
-              <p>
-                Mr. Dau tutored me in my precalculus Honors class. I went from
-                low Bs to high As on my exams. He walked through all my notes
-                and explained everything I didn't understand.
-              </p>
-            </blockquote>
-            <cite>Precalculus student</cite>
-          </article>
-          <article>
-            <blockquote>
-              <p>
-                I highly recommend David as a math tutor. He helped explain
-                complicated concepts in a way my son understood and helped boost
-                his confidence. He also came to our home and was flexible to
-                accommodate my son's busy sports schedule.
-              </p>
-            </blockquote>
-            <cite>Parent of student</cite>
-          </article>
+          <Testimonial citation="Parent of student in Precalculus">
+            David saved the day for our daughter who was struggling in
+            Precalculus. We reached out to him and his response was immediate
+            and we set up a time that week. Loved his offer to meet in our home.
+            Our daughter's grade was a C but she was able to get it up to an A
+            in the next semester. I would give credit to David for instilling
+            her confidence in math and helping her with greater understanding.
+          </Testimonial>
+
+          <Testimonial citation="Precalculus student">
+            Mr. Dau explained concepts so that I could understand it.
+          </Testimonial>
+
+          <Testimonial citation="Precalculus student">
+            Mr. Dau tutored me in my precalculus Honors class. I went from low
+            Bs to high As on my exams. He walked through all my notes and
+            explained everything I didn't understand.
+          </Testimonial>
+
+          <Testimonial citation="Parent of student">
+            I highly recommend David as a math tutor. He helped explain
+            complicated concepts in a way my son understood and helped boost his
+            confidence. He also came to our home and was flexible to accommodate
+            my son's busy sports schedule.
+          </Testimonial>
         </section>
       </main>
     </div>
