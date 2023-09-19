@@ -15,6 +15,8 @@ import {
   // faSquareRootVariable, // Maybe use later if we want different icons
   // faNotEqual, // Maybe use later if we want different icons
 } from "@fortawesome/free-solid-svg-icons";
+// @ts-ignore
+import IntroVideo from "./assets/David_Intro.mp4";
 import "./App.css";
 
 const iconColor = "white";
@@ -107,6 +109,9 @@ function App() {
       </header>
       <main>
         <section className="credentials-section">
+          <video controls>
+            <source src={IntroVideo} />
+          </video>
           <header>
             <h2>Credentials</h2>
           </header>
