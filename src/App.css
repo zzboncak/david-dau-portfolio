@@ -55,28 +55,16 @@ blockquote p::after {
 
 .credentials-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
+  grid-template-columns: repeat(1, 1fr);
   width: calc(100vw - 120px);
   margin: 0 auto;
 }
 
-.credential:nth-child(odd) {
-  padding-left: 2rem;
-  text-align: right;
-  padding-right: 1rem;
-}
-
-.credential:nth-child(odd) p {
-  text-align: right;
-  padding-right: 1rem;
-}
-
-.credential:nth-child(even) {
+.credential {
   padding-right: 2rem;
 }
 
-.credential:nth-child(even) p {
+.credential p {
   padding-left: 1rem;
 }
 
@@ -141,4 +129,21 @@ blockquote p::after {
 
 .full-height {
   height: 50vh;
+}
+
+/* Video Player Styles */
+video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* We need to have a smaller font for the .help-subject text when on mobile */
+@media (max-width: 768px) {
+  .help-subject {
+    font-size: 30px;
+  }
+
+  .help-item {
+    padding-left: 2rem;
+  }
 }

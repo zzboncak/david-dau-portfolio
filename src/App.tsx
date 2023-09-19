@@ -116,19 +116,19 @@ function App() {
           </header>
           <section className="credentials-grid">
             <article className="credential">
-              <p>Currently in my 10th year of teaching high school Math</p>
               <FontAwesomeIcon icon={faSchoolCircleCheck} color={iconColor} />
+              <p>Currently in my 10th year of teaching high school Math</p>
             </article>
             <article className="credential">
               <FontAwesomeIcon icon={faCertificate} color={iconColor} />
               <p>Certified to teach grades 6-12</p>
             </article>
             <article className="credential">
+              <FontAwesomeIcon icon={faGraduationCap} color={iconColor} />
               <p>
                 Degree from Marquette University in Secondary Education and
                 Mathematics
               </p>
-              <FontAwesomeIcon icon={faGraduationCap} color={iconColor} />
             </article>
             <article className="credential">
               <FontAwesomeIcon icon={faGraduationCap} color={iconColor} />
@@ -138,11 +138,11 @@ function App() {
               </p>
             </article>
             <article className="credential">
+              <FontAwesomeIcon icon={faGraduationCap} color={iconColor} />
               <p>
                 Masters Degree from Concordia University in Differentiated
                 Instruction
               </p>
-              <FontAwesomeIcon icon={faGraduationCap} color={iconColor} />
             </article>
             <article className="credential">
               <FontAwesomeIcon icon={faGraduationCap} color={iconColor} />
