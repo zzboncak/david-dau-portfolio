@@ -13,8 +13,6 @@ import {
   faSuperscript,
   IconDefinition,
   faScroll,
-  // faSquareRootVariable, // Maybe use later if we want different icons
-  // faNotEqual, // Maybe use later if we want different icons
 } from "@fortawesome/free-solid-svg-icons";
 import IntroVideo from "./assets/David_Intro.mp4";
 import "./App.css";
@@ -176,6 +174,13 @@ function App() {
               />
             ))}
           </section>
+          <p className="text-align-center">
+            Contact me at{" "}
+            <a href="mailto:David.dau25@gmail.com?subject=Tutoring Inquiry">
+              David.dau25@gmail.com
+            </a>{" "}
+            for more information.
+          </p>
         </section>
         <section>
           <h2>Testimonials</h2>

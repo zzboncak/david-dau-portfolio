@@ -139,6 +139,10 @@ blockquote p::after {
   align-items: center;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 .align-baseline {
   align-items: baseline;
 }
