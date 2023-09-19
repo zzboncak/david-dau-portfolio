@@ -12,6 +12,7 @@ import {
   faInfinity,
   faSuperscript,
   IconDefinition,
+  faScroll,
   // faSquareRootVariable, // Maybe use later if we want different icons
   // faNotEqual, // Maybe use later if we want different icons
 } from "@fortawesome/free-solid-svg-icons";
@@ -125,31 +126,37 @@ function App() {
             </article>
             <article className="credential">
               <FontAwesomeIcon icon={faGraduationCap} color={iconColor} />
-              <p>
-                Degree from Marquette University in Secondary Education and
-                Mathematics
-              </p>
+              <p>Degrees from</p>
             </article>
             <article className="credential">
-              <FontAwesomeIcon icon={faGraduationCap} color={iconColor} />
-              <p>
-                Masters Degree from Concordia University in Curriculum and
-                Instruction
-              </p>
-            </article>
-            <article className="credential">
-              <FontAwesomeIcon icon={faGraduationCap} color={iconColor} />
-              <p>
-                Masters Degree from Concordia University in Differentiated
-                Instruction
-              </p>
-            </article>
-            <article className="credential">
-              <FontAwesomeIcon icon={faGraduationCap} color={iconColor} />
-              <p>
-                Masters Degree from American College of Education in Educational
-                Technology
-              </p>
+              <ul>
+                <li>
+                  <FontAwesomeIcon icon={faScroll} color={iconColor} />
+                  <p>
+                    Marquette University - B.A. in Secondary Education and
+                    Mathematics
+                  </p>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faScroll} color={iconColor} />
+                  <p>
+                    Concordia University - M.A. in Curriculum and Instruction
+                  </p>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faScroll} color={iconColor} />
+                  <p>
+                    Concordia University - M.A. in Differentiated Instruction
+                  </p>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faScroll} color={iconColor} />
+                  <p>
+                    American College of Education - M.A. in Educational
+                    Technology
+                  </p>
+                </li>
+              </ul>
             </article>
           </section>
         </section>

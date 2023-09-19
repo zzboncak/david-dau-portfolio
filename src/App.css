@@ -83,6 +83,22 @@ blockquote p::after {
   border-radius: 10px;
 }
 
+.credential ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.credential ul li p {
+  font-size: 18px;
+}
+
+.credential ul li .svg-inline--fa {
+  width: 20px;
+  height: 20px;
+}
+
 .secondary-background {
   background-color: var(--secondary-color);
 }
