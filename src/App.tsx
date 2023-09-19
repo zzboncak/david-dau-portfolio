@@ -15,7 +15,6 @@ import {
   // faSquareRootVariable, // Maybe use later if we want different icons
   // faNotEqual, // Maybe use later if we want different icons
 } from "@fortawesome/free-solid-svg-icons";
-// @ts-ignore
 import IntroVideo from "./assets/David_Intro.mp4";
 import "./App.css";
 
